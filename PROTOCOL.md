@@ -245,7 +245,7 @@ firmware versions are confirmed; unlabelled slots read `0` in standby.
 | 32 | subState | Sub-state |
 | 33 | rssi | WiFi RSSI reported back |
 | 35 | fabNumber | Fabrication number |
-| 36 | model | Stove model ID (10 = INTERNO, 13 = DOMO, 23 = DOMO BACK) |
+| 36 | model | Stove model ID (10 = INTERNO, 13 = DOMO, 18 = LIVO, 23 = DOMO BACK) |
 | 37 | language | UI language index |
 | 38 | appVerBoard | Main board firmware version (229 = V2.29) |
 | 44 | firmwareBuild | Firmware build (58512 = 585.12) |
@@ -266,6 +266,7 @@ The stove reports its hardware model identifier in sensor index 36. This ID matc
 |:---:|:---:|:---:|:---|:---|
 | **`10`** | `0x0A` | `010` / `ITRO` | **RIKA INTERNO** | Pellet fireplace insert (*Kamineinsatz*) |
 | **`13`** | `0x0D` | `013` / `DOMO` | **RIKA DOMO** | Pellet stove (natural convection + MultiAir) |
+| **`18`** | `0x12` | `018` / `LIVO` | **RIKA LIVO** | Pellet stove (natural convection) |
 | **`23`** | `0x17` | `023` / `DOBA` | **RIKA DOMO BACK** | Pellet stove with integrated baking oven (*Backofen*) |
 
 *Note: Other Rika models (e.g. INDUO hybrid pellet/wood, COMO, PARO, LIVO) use distinct IDs and may use different firmware architectures or communication variants.*

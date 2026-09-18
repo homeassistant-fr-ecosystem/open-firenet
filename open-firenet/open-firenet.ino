@@ -31,7 +31,7 @@ USBCDC USBSerial;
 
 // --------------------------------------------------------- version & config USB
 #ifndef OPENFIRENET_VERSION
-#define OPENFIRENET_VERSION "2.1.0"
+#define OPENFIRENET_VERSION "2.1.1"
 #endif
 
 // Identifiants USB Open-Firenet
@@ -177,6 +177,7 @@ static const char* getStoveModelName(long modelId) {
   switch (modelId) {
     case 10: return "INTERNO";
     case 13: return "DOMO";
+    case 18: return "LIVO";
     case 23: return "DOMO BACK";
     default: return "RIKA";
   }
